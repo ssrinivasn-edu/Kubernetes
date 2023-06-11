@@ -8,7 +8,12 @@
 ## Session 1: Introduction to Kubernetes
 - Overview of containerization and its benefits
 - Introduction to Kubernetes and its architecture
-- Key concepts: Pods, ReplicaSets, Deployments, Services, Namespaces
+- Key concepts: 
+   - Stateless: Pods, ReplicaSets, Deployments 
+   - Networking: Services, Ingress
+   - Storage: Config Map, Secret, Volumes
+   - Management: Namespaces
+ 
 - Hands-on exercise: Installing and setting up a local Kubernetes cluster (minikube)
 - BYOQ (**B**ring **Y**our **O**wn **Q**ueries)  
 
