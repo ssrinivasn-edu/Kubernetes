@@ -13,7 +13,7 @@
    - Networking: Services, Ingress
    - Storage: Config Map, Secret, Volumes
    - Management: Namespaces
- 
+ ``
 - Hands-on exercise: Installing and setting up a local Kubernetes cluster (minikube)
 - BYOQ (**B**ring **Y**our **O**wn **Q**ueries)  
 
@@ -22,7 +22,7 @@
 - Working with ReplicaSets and Deployments
 - Rolling updates and rollbacks
 - Managing application configurations using ConfigMaps and Secrets
-- Hands-on exercise: Deploying and updating a sample application
+- Hands-on exercise: Deploying and updating a sample application components
 - BYOQ (**B**ring **Y**our **O**wn **Q**ueries)  
 
 ## Session 3: Networking and Service Discovery
@@ -35,7 +35,6 @@
 ## Session 4: Scaling and Autoscaling
 - Scaling applications manually
 - Horizontal Pod Autoscaling (HPA)
-- Cluster Autoscaling
 - Hands-on exercise: Scaling applications using HPA and testing autoscaling
 - BYOQ (**B**ring **Y**our **O**wn **Q**ueries)  
 
@@ -43,6 +42,6 @@
 ## Session 5: Storage and Volumes
 - Overview of storage options in Kubernetes
 - Persistent Volumes (PV) and Persistent Volume Claims (PVC)
-- Working with different volume types
-- Hands-on exercise: Configuring and using persistent storage
+- StatefulSet
+- Hands-on exercise: Configuring StatefulSet applicaiton
 - BYOQ (**B**ring **Y**our **O**wn **Q**ueries)  
