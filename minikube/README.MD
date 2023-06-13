@@ -6,7 +6,7 @@ To install Minikube on Windows 11, you can follow these steps:
 
 - Download Docker Desktop for Windows from the official Docker website: https://www.docker.com/products/docker-desktop
 - Install Docker Desktop by running the downloaded installer as an Administrator.
-- Go To Start and serach Docker Desktop. Click Docker Desktop app icon to start the Docker on the machine 
+- Go To Start and search Docker Desktop. Click Docker Desktop app icon to start the Docker on the machine 
 
 
 ## Step 2: Install kubectl
