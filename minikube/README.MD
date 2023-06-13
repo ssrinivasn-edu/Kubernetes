@@ -29,6 +29,7 @@ mkdir c:\minikube
 - Re-open PowerShell as an administrator.
 - Install Minikube by running the following command:
 ```
+cd c:\minikube
 .\minikube-installer.exe
 ```
 - Minikube will be installed in the default location (C:\Program Files\Minikube) by default. If you want to install it in a different location, use the `--install-dir` flag followed by the desired directory path.
