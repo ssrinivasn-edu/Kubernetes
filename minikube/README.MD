@@ -42,6 +42,9 @@ minikube start
 ```
 - Minikube will download the necessary Kubernetes components and create a virtual machine (VM) to host your cluster. This process may take a few minutes.
 - Once Minikube is started, you can use `kubectl` commands to interact with your Minikube cluster.
+Tip: If you had trialed \ used Minikube earlier with any other Driver like VirtualBox etc., you may get an error message. To overcome this, run the below commands
+  minikube delete --all --purge
+  minikube start
 
 ## Verify Minikube installation
 
