@@ -53,16 +53,8 @@ minikube start
    ```
    minikube status
    ```
-    You will see out similar to following
-      PS C:\minikube> minikube status
-      minikube
-      type: Control Plane
-      host: Running
-      kubelet: Running
-      apiserver: Running
-      kubeconfig: Configured
-
-PS C:\minikube>
+    You will see output similar to following
+    ![Screenshot](minikube status.png)
 
  - Run command - 
    ```
