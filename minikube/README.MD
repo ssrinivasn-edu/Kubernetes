@@ -53,7 +53,7 @@ minikube start
    ```
    minikube status
    ```
- - You will see output similar to following
+   You will see output similar to following
    ```
    PS C:\minikube> minikube status
    minikube
