@@ -49,6 +49,10 @@ minikube start
 
 ## Verify Minikube installation
 
+ - Run command to check minikube status - 
+   ```
+   minikube status
+   ```
  - Run command - 
    ```
    kubectl get pod --all-namespaces
