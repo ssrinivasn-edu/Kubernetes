@@ -58,13 +58,13 @@ minikube start
    kubectl get pod --all-namespaces
    ```
  - You will see out similar to following
-```
- NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE
-kube-system   coredns-787d4945fb-r7hvt           1/1     Running   0             81s
-kube-system   etcd-minikube                      1/1     Running   0             94s
-kube-system   kube-apiserver-minikube            1/1     Running   0             95s
-kube-system   kube-controller-manager-minikube   1/1     Running   0             94s
-kube-system   kube-proxy-dbm8w                   1/1     Running   0             82s
-kube-system   kube-scheduler-minikube            1/1     Running   0             94s
-kube-system   storage-provisioner                1/1     Running   1 (69s ago)   85s
-```
+   ```
+   NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE
+   kube-system   coredns-787d4945fb-r7hvt           1/1     Running   0             81s
+   kube-system   etcd-minikube                      1/1     Running   0             94s
+   kube-system   kube-apiserver-minikube            1/1     Running   0             95s
+   kube-system   kube-controller-manager-minikube   1/1     Running   0             94s
+   kube-system   kube-proxy-dbm8w                   1/1     Running   0             82s
+   kube-system   kube-scheduler-minikube            1/1     Running   0             94s
+   kube-system   storage-provisioner                1/1     Running   1 (69s ago)   85s
+   ```
