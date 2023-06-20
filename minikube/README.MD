@@ -67,7 +67,7 @@ minikube start
    ```
    kubectl get pod --all-namespaces
    ```
- - You will see out similar to following
+   You will see out similar to following
    ```
    NAMESPACE     NAME                               READY   STATUS    RESTARTS      AGE
    kube-system   coredns-787d4945fb-r7hvt           1/1     Running   0             81s
