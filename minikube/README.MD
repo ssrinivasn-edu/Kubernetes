@@ -16,7 +16,7 @@ kubectl is a command-line tool used to interact with Kubernetes clusters. You ne
 - Extract the downloaded archive and move the `kubectl` binary to a directory in your system's PATH - c:\windows\system32. Move file using File Explorer as the Administrative previlidage required for it.
 
 ## Step 3: Install Minikube
-- Open PowerShell as an administrator.
+- Open "Windows PowerShell" as an administrator.
 - Download the Minikube Windows installer by running the following command:
 ```
 Invoke-WebRequest -Uri https://storage.googleapis.com/minikube/releases/latest/minikube-installer.exe -OutFile minikube-installer.exe
