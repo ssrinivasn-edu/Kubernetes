@@ -53,15 +53,6 @@ minikube start
    ```
    minikube status
    ```
-    You will see output similar to following
-      # PS C:\minikube> minikube status
-      # minikube
-      # type: Control Plane
-      # host: Running
-      # kubelet: Running
-      # apiserver: Running
-      # kubeconfig: Configured
-   ```
  - Run command - 
    ```
    kubectl get pod --all-namespaces
