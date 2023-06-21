@@ -1,13 +1,13 @@
 
 ## Step1: Installing Colimo
-  - Run install command
-  ```
-  brew install colima
-  ```
-  - Verify installation by running command
-  ```
-  colima
-  ```
+- Run install command
+```
+brew install colima
+```
+- Verify installation by running command
+```
+colima
+```
   
 ### Step2: Installing Docker's cli
 - Run command to install
