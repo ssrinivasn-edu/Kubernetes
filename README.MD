@@ -3,7 +3,7 @@
 
 ### Prerequisite
 -  Laptop or Desktop for local Kubernetes cluster (minikube)
-
+-  Install minikube pre-requisites. Follow steps for your platform outlined here https://github.com/ssrinivasn-edu/Kubernetes/tree/main/pre-requisite 
 
 ## Session 1: Introduction to Kubernetes
 - Overview of containerization and its benefits
