@@ -19,18 +19,23 @@ spec:
         - containerPort: 5432
         env:
         - name: POSTGRES_USER
-          value: your_username
+          value: psql
         - name: POSTGRES_PASSWORD
-          value: your_password
+          value: LevelUp
         - name: POSTGRES_DB
-          value: your_database_name
+          value: tasks
         volumeMounts:
         - name: postgres-storage
           mountPath: /var/lib/postgresql/data
+        - name: postgres-scripts
+          mountPath: /docker-entrypoint-initdb.d
+          readOnly: true          
       volumes:
       - name: postgres-storage
         emptyDir: {}
-
+      - name: postgres-scripts
+        configMap:
+          name: postgres-scripts
 ---
 apiVersion: v1
 kind: Service
@@ -42,9 +47,7 @@ spec:
   ports:
   - protocol: TCP
     port: 5432
-
 ---
-
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -55,4 +58,3 @@ data:
       id serial PRIMARY KEY,
       name varchar(255)
     );
-
