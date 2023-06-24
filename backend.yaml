@@ -1,61 +1,47 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgres
+  name: backend-deployment
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: postgres
-  replicas: 1
+      app: backend
   template:
     metadata:
       labels:
-        app: postgres
+        app: backend
     spec:
       containers:
-      - name: postgres
-        image: postgres:latest
+      - name: backend-container
+        image: aniruddhadockerid/backend:2.0
         ports:
-        - containerPort: 5432
+        - containerPort: 8081
         env:
-        - name: POSTGRES_USER
+        - name: PG_HOST
+          value: postgres
+        - name: PG_PORT
+          value: "5432"
+        - name: PG_USER
           value: psql
-        - name: POSTGRES_PASSWORD
+        - name: PG_PASSWORD
           value: LevelUp
-        - name: POSTGRES_DB
+        - name: PG_DBNAME
           value: tasks
-        volumeMounts:
-        - name: postgres-storage
-          mountPath: /var/lib/postgresql/data
-        - name: postgres-scripts
-          mountPath: /docker-entrypoint-initdb.d
-          readOnly: true          
-      volumes:
-      - name: postgres-storage
-        emptyDir: {}
-      - name: postgres-scripts
-        configMap:
-          name: postgres-scripts
+        readinessProbe:
+            httpGet:
+              path: /items
+              port: 8081
+
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: postgres
+  name: backend-service
 spec:
   selector:
-    app: postgres
+    app: backend
   ports:
   - protocol: TCP
-    port: 5432
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: postgres-scripts
-data:
-  init.sql: |
-      CREATE table list (
-          id serial primary key,
-          item char(140),
-          done bool
-      );
+    port: 8081
+    targetPort: 8081
