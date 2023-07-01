@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend          
-          image: aniruddhadockerid/frontnend:2.0
+          image: aniruddhadockerid/frontend:4.0
           ports:
             - containerPort: 80
 ---
@@ -28,6 +28,6 @@ spec:
     app: frontend
   ports:
     - protocol: TCP
-      port: 80
+      port: 8085
       targetPort: 80
-  type: ClusterIP
+  type: NodePort
